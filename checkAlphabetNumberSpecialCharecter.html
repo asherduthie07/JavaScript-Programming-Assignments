@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Challenge 9</title>
+</head>
+<body>
+    <script>
+        const input = '.';
+        const specialCharacters = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+
+        if (typeof input == 'string' && input.toUpperCase() != input.toLowerCase()) {
+            console.log(`The given character is an alphabet`)
+        }
+        else if (typeof input == 'number' ){
+            console.log(`The given character is a number`)
+        }
+        else if (input.match(specialCharacters)){
+            console.log(`The given character is a special character`);
+        }
+        else {
+            console.log('The given character was not a valid charactes')
+        } 
+    </script>
+</body>
+</html>
